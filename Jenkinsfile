@@ -46,4 +46,4 @@ pipeline {
         echo 'An error has ocurred'
       }
  }
-
+}
