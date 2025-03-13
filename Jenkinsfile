@@ -37,12 +37,13 @@ pipeline {
 
     post {
         success {
-        // One or more steps need to be included within each condition's block.
-        echo 'the deployment has worked'
+            // One or more steps need to be included within each condition's block.
+            echo 'the deployment has worked'
+            cleanWs()
        }
        failure {
         // One or more steps need to be included within each condition's block.
         echo 'An error has ocurred'
       }
  }
-}
+
